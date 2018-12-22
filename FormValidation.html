@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Wild West Enterprises</title>
+        <meta charset="utf-8">
+        <link href="theme/jquery-ui.css" rel="stylesheet"> 
+        <link href="css/FormValidation.css" rel="stylesheet"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="theme/external/jquery/jquery.js"></script>
+        <script src="theme/jquery-ui.js"></script>
+        <script src="validation/dist/jquery.validate.js"></script>
+        <script src="js/FormValidation.js"></script>
+    </head>
+    <body>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Directions</a></li>
+                    <li><a href="#tabs-2">Contact</a></li>
+                </ul>
+                <div id="tabs-1">Please use the following form to search for items</div>
+                <div id="tabs-2">
+                    If you have trouble with this page, please reach out to customer support for assistance:
+                    <br>
+                    <br>
+                    Email: wildwest@wildwest.com
+                    <br>
+                    <br>
+                    Phone: (1)-444-444-4444
+                    <br>
+                    <br>
+                </div>   
+            </div>
+            <br>
+        <form style="margin-top: 1em;" id="form2" onsubmit="return false">
+            <h2 class="demoHeaders">Please use the slider to select a price range for the items you are looking for.</h2>
+            <div id="myslider"></div>
+            <br>
+            <br>
+            <div id="lower"></div>
+            <br>
+            <br>
+            <div id="higher"></div>
+            <br>
+            <br>
+            <h2 class="demoHeaders">Select from the following categories:</h2>
+            <br>
+            <div id="radioset">
+                <input type="checkbox" id="snakeOil" name="check"><label for="snakeOil">Snake Oil</label>
+                <input type="checkbox" id="hats" name="check" checked="checked"><label for="hats">Hats</label>
+                <input type="checkbox" id="wagons" name="check"><label for="wagons">Covered Wagons</label>
+                <br>
+                <h2 class="demoHeaders">Select from the following sizes(if applicable)</h2>
+                <br>
+                <input type="radio" id="small" name="radio"><label for="small">Small</label>
+		        <input type="radio" id="medium" name="radio" checked="checked"><label for="medium">Medium</label>
+                <input type="radio" id="large" name="radio"><label for="large">Large</label>
+                <input type="radio" id="xLarge" name="radio"><label for="xLarge">X-Large</label>
+            </div>
+            <br>
+            <br>
+            <label for="autocomplete">Keywords:</label>
+            <br>
+            <div>
+            <input id="autocomplete" type="text" title="type &quot;a&quot;">
+            </div>
+            <h2 class="demoHeaders">Select the date you'd want your item to ship:</h2>
+            <br>
+            <p>Date: <input type="text" id="datepicker"></p>
+            <br>
+            <label for="Message">Message:</label>
+            <input type="text" id="Message" required>
+            <br>
+            <br>
+            <h2 class="demoHeaders">While you're at it, create an account with us so we can help you find the best deals on wild west gear:</h2>
+            <br>
+            <label for="customerEmail">Email:</label>
+            <input type="email" id="customerEmail">
+            <br>
+            <br>
+            <label for="customerPassword">Password:</label>
+            <input type="password" id="customerPassword">
+            <br>
+            <br>
+            <label for="customerTel">Telephone:</label>
+            <input type="tel" id="customerTel">
+            <br>
+            <br>
+            <input type="submit" class="ui-button ui-widget ui-state-default ui-corner-all" id="submitForm" role="button">
+            <input type="reset" class="ui-button ui-widget ui-state-default ui-corner-all" role="button">
+            <br>
+            <h2 class="demoHeaders">Your Results:</h2>
+            <div id="output"></div>
+            <div id="PassOutput"></div>
+            <br>
+        </form>
+    </body>
+</html>

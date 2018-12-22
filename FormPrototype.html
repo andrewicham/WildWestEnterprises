@@ -1,0 +1,92 @@
+<html lang="en">
+    <head>
+        <title>Wild West Enterprises</title>
+        <meta charset="utf-8">
+        <link href="theme/jquery-ui.css" rel="stylesheet"> 
+        <link href="css/FormPrototype.css" rel="stylesheet"> 
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="theme/external/jquery/jquery.js"></script>
+        <script src="theme/jquery-ui.js"></script>
+        <script src="js/FormPrototype.js"></script>
+    </head>
+    <body>
+        <form style="margin-top: 1em;" name="theForm">
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1">Directions</a></li>
+                    <li><a href="#tabs-2">Contact</a></li>
+                </ul>
+                <div id="tabs-1">Please use the following form to search for items</div>
+                <div id="tabs-2">
+                    If you have trouble with this page, please reach out to customer support for assistance:
+                    <br>
+                    <br>
+                    Email: wildwest@wildwest.com
+                    <br>
+                    <br>
+                    Phone: (1)-444-444-4444
+                    <br>
+                    <br>
+                    Or Alternatively, Please use the following field to submit any complaints. Please also create 
+                    an account so we may get back with you.
+                    <br>
+                    <br>
+                    <label for="complaint">Complaint:</label>
+                    <input type="text" id="complaint">
+                    <br>
+                    <br>
+                    <label for="customerEmail">Email:</label>
+                    <input type="email" id="customerEmail">
+                    <br>
+                    <br>
+                    <label for="customerPassowrd">Password:</label>
+                    <input type="password" id="customerPassword">
+                    <br>
+                    <br>
+                    <label for="customerTel">Telephone:</label>
+                    <input type="tel" id="customerTel">
+                    <br>
+                    <br>
+                    <button id="button">Submit</button>
+                
+                </div>
+            </div>
+            <br>
+            <h2 class="demoHeaders">Please use the slider to select a price range for the items you are looking for.</h2>
+            <div id="slider"></div>
+            <br>
+            <h2 class="demoHeaders">Select from the following categories:</h2>
+            <br>
+            <div id="radioset">
+                <input type="checkbox" id="check1" name="check"><label for="check1">Snake Oil</label>
+                <input type="checkbox" id="check2" name="check" checked="checked"><label for="check2">Hats</label>
+                <input type="checkbox" id="check3" name="check"><label for="check3">Covered Wagons</label>
+                <br>
+                <h2 class="demoHeaders">Select from the following sizes(if applicable)</h2>
+                <br>
+                <input type="radio" id="radio1" name="radio"><label for="radio1">Small</label>
+		        <input type="radio" id="radio2" name="radio" checked="checked"><label for="radio2">Medium</label>
+                <input type="radio" id="radio3" name="radio"><label for="radio3">Large</label>
+                <input type="radio" id="radio4" name="radio"><label for="radio4">X-Large</label>
+            </div>
+            <br>
+            <br>
+            <label for="basic">Keywords:</label>
+            <br>
+            <div>
+                <input id="autocomplete" title="type &quot;a&quot;">
+            </div>
+            <h2 class="demoHeaders">Select the date you'd want your item to ship:</h2>
+            <br>
+            <div id="datepicker"></div>
+            <br>
+            <br>
+            <button id="button" type="submit">Submit</button>
+            <button id="reset" type="reset">Reset</button>
+            <br>
+            <h2 class="demoHeaders">Your Results:</h2>
+            <div id="output"></div>
+            <br>
+        </form>
+    </body>
+</html>
